@@ -1,3 +1,4 @@
+
 .brand-header{
     position: relative;
     width: 100%;
@@ -5,6 +6,9 @@
     background-color: var(--black-color);  
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .main-category__list-link{
     padding: 15px 25px;
@@ -38,8 +42,8 @@
     position: absolute;
     width: 140px;
     height: fit-content;
-    background-color: rgba(226, 219, 211, 0.6);
-    top: 46px;
+    background-color: var(--while-color);
+    top: 100%;
     left: 0;
     color: var(--black-color);
     display: flex;
@@ -48,14 +52,21 @@
     line-height: 4rem;
     list-style: none;
     display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .list-link__item{
     padding-right: 0;
     padding-left: 15px;
 }
 .list-link__item:hover{
-    background-color: var(--while-color);
+    background-color: var(--gray-color);
 }
 .main-category__list-link__extra:hover .category__list-link__items{
     display: block;
+}
+/* Slider */
+#slider{
+    min-height: 500px;
+    background-color: #333;
+    margin-top: 46px;
 }
