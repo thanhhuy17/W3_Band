@@ -1,0 +1,18 @@
+:root{
+    /* Các màu chủ đạo của Web */
+    --black-color: #000000;
+    --while-color: #FFFFEF;
+    --gray-color: #C9C9C9;
+    --red-color:#F44236;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
