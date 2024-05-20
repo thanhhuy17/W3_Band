@@ -50,6 +50,7 @@
     display: none;
 }
 .list-link__item{
+    padding-right: 0;
     padding-left: 15px;
 }
 .list-link__item:hover{
