@@ -221,6 +221,12 @@
 }
 .tour__location-list-img{
     width: 245px;
+    /* transition: filter 0.3s ease; */
+}
+.tour__location-list-img:hover{
+    /* transition: grayscale(30%);
+    transition: filter 0.3s ease; */
+    opacity: 0.8;
 }
 .tour__location-name,
 .tour__location-date,
@@ -244,6 +250,7 @@
     color: #FFFFFF;
     padding: 8px 16px;
     border: none;
+    cursor: pointer;
 }
 .tour__location-btn:hover{
     background-color: var(--gray-color);
