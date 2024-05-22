@@ -378,3 +378,101 @@
 .footer-design-name:hover{
     color: #3cf3e4;
 }
+/* Overlay */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+.modal-container{
+    width: 900px;
+    height: 450px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    position: relative;
+}
+.modal-header__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+    padding: 15px 15px;
+    z-index: 1;
+    color: #FFFFFF;
+}
+.modal-header__close:hover{
+    background-color: var(--gray-color);
+    color: var(--black-color);
+}
+.modal-header{
+    width: 100%;
+    height: 125px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+.modal-header__title{
+    margin-left: 15px;
+    font-weight: 400;
+}
+.modal-body{
+    margin: 15px;
+}
+.modal-body__sell-ticket,
+.modal-body__input-email{
+    display: flex;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+.modal-body__sell-ticket--input,
+.modal-body__input-email--input{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.5rem;
+    border: 1px solid #ccc !important;
+}
+.modal-body__btn .modal-body__btn-para{
+    padding: 16px;
+    width: 100%;
+    background-color: #009688;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.modal-body__btn .modal-body__btn-para:hover{
+    background-color: var(--gray-color);
+    color: var(--black-color);
+}
+
+.modal-footer{
+    font-size: 1.5rem;
+    display: flex;
+    margin: 30px 15px 0 15px;
+    justify-content: space-between;
+}
+.modal-footer__help-para{
+    padding: 12px 15px;
+    font-weight: 600;
+    background-color: #f44336;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.modal-footer__help-para:hover{
+    background-color: var(--gray-color);
+    color: var(--black-color);
+}
+.modal-footer__help-link{
+    color: #05ad9f;
+}
