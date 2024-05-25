@@ -227,18 +227,18 @@
     </div>
     <!-- Java Script -->
     <script>
-        var header =  document.getElementById('brand-header');        
+        var brand_header =  document.getElementById('brand-header');        
         var listMobile = document.getElementById('list-mobile');
 
         listMobile.onclick = function(){
+            var headerOpen = brand_header.style.overflow === 'visible';
+            console.log(headerOpen)
             
-            var headerOpen = header.style.overflow === 'hidden';
-            console.log(header.style.overflow)
             if(headerOpen){
-                header.style.overflow = 'visible';
+                brand_header.style.overflow = 'hidden';
             }
             else{
-                header.style.overflow = 'hidden';                
+                brand_header.style.overflow = 'visible';                
             }
             
         }
