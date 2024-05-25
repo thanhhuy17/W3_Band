@@ -18,21 +18,37 @@
 <body>
     <div id="main">
         <div id="header">
-            <div class="brand-header">
-                <a href="#" class="main-category__list-link">HOME</a>
-                <a href="#about" class="main-category__list-link">BAND</a>
-                <a href="#tour" class="main-category__list-link">TOUR</a>
-                <a href="#contact" class="main-category__list-link">CONTACT</a>
-                <a href="#" class="main-category__list-link main-category__list-link__extra">MORE
-                    <i class="main-category__list-icon fa-solid fa-sort-down"></i>
-                    <ul class="category__list-link__items">
-                        <li class="list-link__item">Merchandise</li>
-                        <li class="list-link__item">Extras</li>
-                        <li class="list-link__item">Media</li>
-                    </ul>
-                </a>                           
+            <div id="brand-header" class="brand-header">
+                <ul class="brand-header__add-use-mobile">
+                    <li class="brand-header__add-use-mobile-item">
+                        <a href="#" class="main-category__list-link">HOME</a>
+                    </li>
+                    <li class="brand-header__add-use-mobile-item">
+                        <a href="#about" class="main-category__list-link">BAND</a>
+                    </li>
+                    <li class="brand-header__add-use-mobile-item">
+                        <a href="#tour" class="main-category__list-link">TOUR</a>
+                    </li>
+                    <li class="brand-header__add-use-mobile-item">
+                        <a href="#contact" class="main-category__list-link">CONTACT</a>
+                    </li>
+                    <li class="brand-header__add-use-mobile-item">
+                        <a href="#" class="main-category__list-link main-category__list-link__extra">MORE
+                            <i class="main-category__list-icon fa-solid fa-sort-down"></i>
+                            <ul class="category__list-link__items"> 
+                                <li class="list-link__item">Merchandise</li>
+                                <li class="list-link__item">Extras</li>
+                                <li class="list-link__item">Media</li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+                                
                 <span class="brand-header__search">
                     <i class="brand-header__search-icon fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span id="list-mobile" class="brand-header-list__mobile">
+                    <i class="list__mobile-icon fa-solid fa-bars"></i>
                 </span>
             </div>
         </div>
@@ -209,5 +225,23 @@
             </div>
         </div>
     </div>
+    <!-- Java Script -->
+    <script>
+        var header =  document.getElementById('brand-header');        
+        var listMobile = document.getElementById('list-mobile');
+
+        listMobile.onclick = function(){
+            
+            var headerOpen = header.style.overflow === 'hidden';
+            console.log(header.style.overflow)
+            if(headerOpen){
+                header.style.overflow = 'visible';
+            }
+            else{
+                header.style.overflow = 'hidden';                
+            }
+            
+        }
+    </script>
 </body>
 </html>

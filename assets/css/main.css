@@ -484,3 +484,9 @@
 .modal-body__input-email-para{
     margin-left: 5px;
 }
+
+.brand-header__add-use-mobile{
+    display: flex;
+    list-style: none;
+    /* flex-direction: column; */
+}
