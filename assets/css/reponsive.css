@@ -1,0 +1,29 @@
+/* PC >=1024px*/
+@media (min-width: 1024px) {
+
+}
+/* Tablet (>=740px and <1024px)*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    #content .about,
+    #content .tour,
+    #content .contact {
+        padding: 64px 16px;
+    }
+    
+    .tour-all,
+    .contact-all{
+        width: 100%
+    }
+
+    .tour__location-list {
+        width: 235px;
+    }
+
+    .tour__location-list-img {
+        width: 235px;
+    }
+}
+/*Mobile <740px*/
+@media (max-width: 739px){
+
+}
