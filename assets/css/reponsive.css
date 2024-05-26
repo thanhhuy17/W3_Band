@@ -26,12 +26,12 @@
 /*Mobile <740px*/
 @media (max-width: 739px){
     .brand-header {
-        background-color: var(--black-color);
         position: fixed;
+        background-color: var(--black-color);
         top: 0;
         left: 0;
         z-index: 1;
-        position: relative;
+        /* position: relative; */
         width: 186%;
         height: 70px;
         overflow: hidden;
@@ -59,13 +59,13 @@
         width: 186%;
         position: relative;
         padding-top: 100%; 
-        margin: 0;     
+        margin: 70px 0 0 0;     
     }
     .brand-header__search {
         display: none;
     }
     .brand-header-list__mobile{
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         height: 70px;
@@ -233,7 +233,7 @@
         height: 800px;
         color: var(--gray-color);
         background-color: #FFFFFF;
-        padding: 64px 16px;
+        padding: 100px 16px 64px 16px;
     }
     .full-contact {
         display: flex;
