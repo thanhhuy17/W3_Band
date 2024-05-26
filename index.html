@@ -225,22 +225,34 @@
             </div>
         </div>
     </div>
-    <!-- Java Script -->
+    <!-- Java Script -->   
     <script>
         var brand_header =  document.getElementById('brand-header');        
         var listMobile = document.getElementById('list-mobile');
-
+        // Đóng mở Mobile Menu
         listMobile.onclick = function(){
             var headerOpen = brand_header.style.overflow === 'visible';
-            console.log(headerOpen)
+            // console.log(headerOpen)
             
             if(headerOpen){
                 brand_header.style.overflow = 'hidden';
             }
             else{
                 brand_header.style.overflow = 'visible';                
+            }            
+        }
+
+        // Tự động đóng khi chọn Menu
+        var menuItems = document.querySelectorAll('.brand-header__add-use-mobile li a[href*="#"]');
+        // console.log(menuItems);
+
+        for(var i= 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            // console.log(menuItem);
+
+            menuItem.onclick = function(){
+                brand_header.style.overflow = 'hidden';
             }
-            
         }
     </script>
 </body>
