@@ -239,16 +239,17 @@
     }
     .tour__location-date, .tour__location-decrip {
         font-size: 2rem;
+        margin-bottom: 30px;
     }
     .tour__location-btn {
-        margin-left: 20px;
+        /* margin-left: 20px;
         margin-top: 15px;
-        background-color: black;
-        color: #FFFFFF;
-        padding: 20px 40px;
-        border: none;
-        cursor: pointer;
-        font-size: 3rem;
+        background-color: black; */
+        /* color: #FFFFFF; */
+        /* padding: 20px 40px; */
+        /* border: none; */
+        /* cursor: pointer; */
+        /* font-size: 3rem; */
         width: 95%;
     }
     
@@ -308,6 +309,7 @@
         bottom: -300px;
         padding: 20px 16px;
         cursor: pointer;
+        font-size: 2.5rem;
     }
     .img-end {
         position: relative;
@@ -352,4 +354,9 @@
     .img-end {
         margin-top: 100px;
     }
+    .tour__location-btn-new {        
+        font-size: 3.2rem;
+        padding: 15px 38%;
+    }
+    
 }
