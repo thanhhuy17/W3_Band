@@ -18,3 +18,13 @@ html{
     scroll-behavior: smooth;
 }
 /* Thêm các CSS chung để Code ngắn hơn */
+@keyframes modalFadeIn{
+    from{
+        transform: translateY(-120px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
