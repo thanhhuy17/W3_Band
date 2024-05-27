@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3_Band</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/headphone.png">
+    <!-- <link rel="icon" type="image/x-icon" href="./assets/img/headphone.png"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -35,9 +35,9 @@
                     <li class="brand-header__add-use-mobile-item add-use-mobile-item_fix">
                         <a href="#" class="main-category__list-link main-category__list-link__extra">MORE
                             <i class="main-category__list-icon fa-solid fa-sort-down"></i>
-                            <ul class="category__list-link__items"> 
+                            <ul class="category__list-link__items">
                                 <li class="list-link__item">Merchandise</li>
-                                <li class="list-link__item">Extras</li>
+                                <li class="list-link__item">Extras</li>                                                        
                                 <li class="list-link__item">Media</li>
                             </ul>
                         </a>
@@ -249,6 +249,7 @@
         for(var i= 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
             // console.log(menuItem);
+            console.log(menuItem.nextElementSibling);
 
             menuItem.onclick = function(){
                 brand_header.style.overflow = 'hidden';

@@ -39,7 +39,8 @@
 .main-category__list-link__extra{
     position: relative;
 }
-.category__list-link__items{
+
+.category__list-link__items {
     position: absolute;
     width: 140px;
     height: fit-content;
@@ -52,9 +53,10 @@
     justify-content: center;
     line-height: 4rem;
     list-style: none;
-    display: none;
+    display: none; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
+
 .list-link__item{
     padding-right: 0;
     padding-left: 15px;

@@ -91,9 +91,11 @@
     }
     .category__list-link__items {
         width: 180px;
+        margin-top: -70px;
     }
     .about-header{
         font-size: 6.5rem;
+        padding-top: 70px;
     }
     .header-name-song{
         font-size: 2.4rem;
