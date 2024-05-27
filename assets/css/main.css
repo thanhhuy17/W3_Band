@@ -398,9 +398,9 @@
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
 }
-.modal.open {
-    display: flex;
-}
+/* .modal.open {
+    display: none;
+} */
 .modal-container{
     width: 900px;
     max-width: calc(100% - 40px);
