@@ -64,7 +64,11 @@
 .list-link__item:hover{
     background-color: var(--gray-color);
 }
-.main-category__list-link__extra:hover .category__list-link__items{
+/* .main-category__list-link__extra:hover .category__list-link__items{
+    display: block;
+} */
+
+.add-use-mobile-item_fix:hover .category__list-link__items{
     display: block;
 }
 /* Slider */
