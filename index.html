@@ -203,7 +203,7 @@
     </div>
     <!-- OverLay Open để mở modal -->
     <div class="modal open">
-        <div class="modal-container">            
+        <div class="modal-container js-modal-container">            
             <div class="modal-header__close">
                 <i class="fa-solid fa-xmark"></i>
             </div>
@@ -295,8 +295,9 @@
         // Chuyển đổi HTMLCollection thành một mảng và thêm các sự kiện click cho từng button
         Array.from(ticketBuyButtons).forEach(function(button) {
             button.onclick = function() {
+                console.log(button);
                 var onFormBuyTicket = getClassOpen.style.display === 'none' || getClassOpen.style.display === '';
-                console.log(onFormBuyTicket);
+                
                 if (onFormBuyTicket) {
                     getClassOpen.style.display = 'flex';
                 } else {
@@ -308,8 +309,9 @@
         var btnClose = document.getElementsByClassName('modal-header__close');
         Array.from (btnClose).forEach(function(btn_close){
             btn_close.onclick = function(){
+                console.log(btn_close);
                 var onFormBuyTicket = getClassOpen.style.display === 'none' || getClassOpen.style.display === '';
-                console.log(onFormBuyTicket);
+                
                 if (onFormBuyTicket) {
                     getClassOpen.style.display = 'flex';
                 } else {
@@ -318,11 +320,11 @@
             };
         });
         // Nút đóng ở dưới
-        var btnClose = document.getElementsByClassName('modal-footer__help-para');
-        Array.from (btnClose).forEach(function(btn_close){
+        var btnClose2 = document.getElementsByClassName('modal-footer__help-para');
+        Array.from (btnClose2).forEach(function(btn_close){
             btn_close.onclick = function(){
-                var onFormBuyTicket = getClassOpen.style.display === 'none' || getClassOpen.style.display === '';
-                console.log(onFormBuyTicket);
+                console.log(btn_close);
+                var onFormBuyTicket = getClassOpen.style.display === 'none' || getClassOpen.style.display === '';               
                 if (onFormBuyTicket) {
                     getClassOpen.style.display = 'flex';
                 } else {
@@ -330,6 +332,13 @@
                 }
             };
         });
+
+        // Chạm ở ngoài cũng phải thoát
+        // const getModalContainer = document.querySelector('.js-modal-container');
+        // getModalContainer.addEventListener('click', function(event){
+        //     console.log(event);
+        //     event.stopPropagation();
+        // });
 
     </script>
 </body>
